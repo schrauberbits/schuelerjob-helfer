@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Schülerjob-Helfer – Was darf ich mit 13 bis 17 arbeiten, was bleibt mir, verliert meine Familie Geld?</title>
+<meta name="description" content="Für Schüler und Eltern: Darf ich mit 13, 14, 15, 16 oder 17 diesen Job machen (Stunden, Uhrzeit, Ferien), was bleibt mir vom Minijob oder Ferienjob, wann habe ich mein Sparziel – und kürzt das Jobcenter, die Wohngeldstelle oder die Familienkasse etwas? Kostenlos, ohne Anmeldung.">
+<style>
+:root{--bg:#f3f4f8;--card:#fff;--ink:#181a24;--muted:#5d6172;--line:#dcdfe8;--soft:#e9ebf2;
+--accent:#4b3fb5;--accent-ink:#fff;--accent-soft:#e6e3f8;--ok:#2d6e3a;--ok-soft:#e3f0e4;--warn:#9a5a00;--warn-soft:#fbefd9;--bad:#b0261f;--bad-soft:#fbe4e1}
+@media (prefers-color-scheme:dark){:root{--bg:#10111a;--card:#1a1c28;--ink:#e9eaf2;--muted:#a2a6b8;--line:#2f3242;--soft:#232636;
+--accent:#b0a8f5;--accent-ink:#17123d;--accent-soft:#25213f;--ok:#86c98f;--ok-soft:#1d321f;--warn:#e8b15d;--warn-soft:#382c17;--bad:#ef8a80;--bad-soft:#3b1e1b}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:560px;margin:0 auto;padding:18px 16px 60px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:18px}
+.brand{font-weight:700;font-size:1.05rem;display:flex;align-items:center;gap:6px;cursor:pointer;background:none;border:0;color:var(--ink);font-family:inherit;padding:0}
+.brand span{font-size:1.25rem}
+.back{background:none;border:0;color:var(--accent);font:inherit;font-weight:600;cursor:pointer;padding:6px 0}
+h1{font-size:1.6rem;line-height:1.2;margin:0 0 6px;letter-spacing:-.01em}
+h2{font-size:1.35rem;line-height:1.25;margin:0 0 14px}
+.sub{color:var(--muted);margin:0 0 20px}
+.step{font-size:.85rem;color:var(--muted);margin:14px 0 6px}
+.qlist{display:flex;flex-direction:column;gap:10px}
+.q{display:flex;align-items:center;gap:14px;width:100%;text-align:left;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;font:inherit;color:inherit;cursor:pointer;text-decoration:none}
+.q:active,.pill:active{transform:scale(.98)}
+.q .ic{flex:0 0 46px;height:46px;border-radius:12px;background:var(--accent-soft);display:flex;align-items:center;justify-content:center;font-size:1.6rem}
+.q b{display:block;font-size:1.05rem}
+.q span{display:block;color:var(--muted);font-size:.88rem}
+.news{background:var(--warn-soft);border-radius:14px;padding:12px 14px;font-size:.9rem;margin:0 0 16px}
+.news b{color:var(--warn)}
+.pills{display:flex;flex-wrap:wrap;gap:8px}
+.pill{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:9px 15px;font:inherit;font-size:.93rem;cursor:pointer;min-height:44px}
+.pill.on{background:var(--accent);border-color:var(--accent);color:var(--accent-ink);font-weight:600}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:10px}
+.field{display:block}
+.field span{display:block;font-size:.82rem;color:var(--muted);margin-bottom:4px;min-height:2.3em}
+input[type=number],input[type=time],input[type=text]{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 12px;height:48px;width:100%}
+input:focus,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.answer{margin-top:20px;border-radius:18px;padding:18px;background:var(--accent-soft)}
+.answer.ok{background:var(--ok-soft)}.answer.warn{background:var(--warn-soft)}.answer.bad{background:var(--bad-soft)}
+.answer .lbl{font-size:.8rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.answer .say{font-size:1.28rem;font-weight:700;line-height:1.3;margin:6px 0 8px}
+.answer.ok .say{color:var(--ok)}.answer.warn .say{color:var(--warn)}.answer.bad .say{color:var(--bad)}
+.answer .more{font-size:.95rem}
+.list{margin:12px 0 0;padding:0;list-style:none;border-top:1px solid color-mix(in srgb,var(--ink) 12%,transparent)}
+.list li{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-bottom:1px solid color-mix(in srgb,var(--ink) 12%,transparent);font-size:.95rem}
+.list li b{white-space:nowrap;text-align:right}
+.list li.best b{color:var(--ok)}
+.bars{margin:14px 0 4px;display:flex;flex-direction:column;gap:8px}
+.bar{font-size:.88rem}
+.bar .row{display:flex;justify-content:space-between;gap:8px}
+.bar .track{height:14px;border-radius:7px;background:color-mix(in srgb,var(--ink) 10%,transparent);overflow:hidden;margin-top:3px}
+.bar .fill{height:100%;border-radius:7px;background:var(--accent)}
+.bar .fill.best{background:var(--ok)}
+.tips{margin:10px 0 0;padding-left:20px;font-size:.92rem}
+.tips li{margin:4px 0}
+.actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.btn{border:1px solid var(--accent);background:var(--accent);color:var(--accent-ink);border-radius:12px;padding:11px 16px;font:inherit;font-weight:600;cursor:pointer;min-height:46px;text-decoration:none;display:inline-flex;align-items:center}
+.btn.ghost{background:transparent;color:var(--accent)}
+.msg{font-size:.88rem;color:var(--ok);align-self:center}
+.formula{font-size:.83rem;color:var(--muted);margin-top:12px;line-height:1.45}
+.hint{font-size:.85rem;color:var(--muted);margin:6px 0 0}
+.hide{display:none!important}
+footer{margin-top:28px;font-size:.8rem;color:var(--muted);text-align:center;line-height:1.5}
+footer a,.answer a{color:var(--accent)}
+.games{display:flex;flex-direction:column;gap:8px;margin-top:8px}
+.game{display:grid;grid-template-columns:1fr 84px 44px 44px;gap:6px;align-items:center}
+.game input{height:44px}
+.mini{border:1px solid var(--line);background:var(--card);color:var(--muted);border-radius:12px;height:44px;font:inherit;cursor:pointer}
+.mini.on{background:var(--ok-soft);color:var(--ok);border-color:var(--ok)}
+.add{margin-top:8px;background:none;border:1px dashed var(--line);color:var(--accent);border-radius:12px;padding:10px 14px;font:inherit;font-weight:600;cursor:pointer;width:100%}
+.box{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:12px 14px;margin-top:12px}
+.box h3{font-size:1.02rem;margin:0 0 4px}
+.box .hint{margin-top:0}
+</style>
+
+<script data-goatcounter="https://schrauberbits.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <button class="brand" id="home" aria-label="Zur Startseite"><span>💶</span>Schülerjob-Helfer</button>
+    <button class="back hide" id="back">← Andere Frage</button>
+  </div>
+  <main id="app"></main>
+  <footer>Richtwerte ohne Gewähr, keine Rechtsberatung. Grundlagen: Jugendarbeitsschutzgesetz, Kinderarbeitsschutzverordnung, Mindestlohngesetz, SGB II, SGB IV, SGB V, Bundeskindergeldgesetz, Wohngeldgesetz, Unterhaltsvorschussgesetz; Werte für 2027 laut Bundesregierung, Minijob-Zentrale und Referentenentwürfen (Stand 24.11.2026).<br>Kostenlos, ohne Anmeldung, ohne Werbung – ein Hobbyprojekt, mit KI-Hilfe erstellt. Deine Eingaben bleiben auf deinem Gerät. Gezählt wird nur anonym und ohne Cookies (mit GoatCounter): wie oft das Programm aufgerufen und benutzt wird und über welchen Link – ohne persönliche Daten und ohne deine Eingaben.<br>Mehr Helfer: <a href="https://schrauberbits.github.io/fuehrerschein-helfer/">Führerschein-Helfer</a> · <a href="https://schrauberbits.github.io/auszug-helfer/">Auszug-Helfer</a> · <a href="https://schrauberbits.github.io/konsolen-helfer/">Konsolen-Helfer</a> · <a href="https://schrauberbits.github.io/urlaub-helfer/">Urlaub-Helfer</a></footer>
+</div>
+
+<script>
+// ================= Grundlagen =================
+const app=document.getElementById('app');
+const num=v=>{const n=parseFloat(String(v).replace(',','.'));return isFinite(n)?n:0};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const clamp=(v,a,b)=>Math.min(b,Math.max(a,v));
+const zahl=(x,d)=>Number(x).toLocaleString('de-DE',{maximumFractionDigits:d==null?0:d});
+const eur=x=>Math.round(x).toLocaleString('de-DE')+' €';
+const eur2=x=>(Math.round(x*100)/100).toLocaleString('de-DE',{minimumFractionDigits:2,maximumFractionDigits:2})+' €';
+const ohneTags=s=>String(s).replace(/<[^>]+>/g,'').replace(/&lt;/g,'<').replace(/&gt;/g,'>').replace(/&quot;/g,'"').replace(/&amp;/g,'&');
+
+// ---------- Zählen: ein Ereignis, sobald der Besucher selbst etwas ändert ----------
+const REF=((new URLSearchParams(location.search).get('ref')||'ohne').replace(/[^a-z0-9_-]/gi,'').slice(0,40))||'ohne';
+let genutzt=false;
+function senden(path,title,versuch){
+  try{ if(window.goatcounter&&window.goatcounter.count){ window.goatcounter.count({path,title,event:true}); return; } }catch(e){ return; }
+  if(versuch<40) setTimeout(()=>senden(path,title,versuch+1),250);
+}
+function nutzung(e){
+  if(genutzt||!e.isTrusted) return;
+  const t=e.target; if(!(t instanceof Element)) return;
+  if(!(t.matches('input')||t.closest('.pill,.mini,.add,[data-cnt]'))) return;
+  if(e.type==='click'&&t.matches('input')) return; // bloßes Antippen eines Feldes zählt nicht
+  genutzt=true; senden('job-nutzung--'+REF,'Schülerjob-Helfer: Wert geändert ('+REF+')',0);
+}
+['input','change','click'].forEach(ev=>app.addEventListener(ev,nutzung,true));
+
+// ---------- Werte über den Hash: #bereich?wert=… ----------
+function hashTeile(){ const h=location.hash.slice(1), i=h.indexOf('?'); return {seite:i<0?h:h.slice(0,i), p:new URLSearchParams(i<0?'':h.slice(i+1))}; }
+const STANDARD=new Map();
+function vorbelegen(S,p){ if(!STANDARD.has(S)) STANDARD.set(S,Object.assign({},S));
+  if([...p.keys()].some(k=>k in S)) Object.assign(S,STANDARD.get(S));
+  for(const k of Object.keys(S)){ if(!p.has(k)) continue; const v=p.get(k); S[k]=typeof S[k]==='number'?num(v):String(v).slice(0,300); } }
+function query(S){ const q=new URLSearchParams(); for(const [k,v] of Object.entries(S)) q.set(k,v); return q.toString(); }
+function hashSetzen(seite,S){ history.replaceState(null,'',location.pathname+location.search+'#'+seite+'?'+query(S)); }
+function teilLink(seite,S){ return location.origin+location.pathname+'?ref=geteilt#'+seite+'?'+query(S); }
+
+// ---------- Bausteine ----------
+const h=html=>{app.innerHTML=html;window.scrollTo(0,0)};
+const pills=(id,list,sel)=>`<div class="pills" id="${id}">${list.map(p=>`<button class="pill${String(p[0])===String(sel)?' on':''}" data-v="${p[0]}">${p[1]}</button>`).join('')}</div>`;
+function pillGroup(id,cb){document.getElementById(id).addEventListener('click',e=>{const b=e.target.closest('.pill');if(!b)return;b.parentElement.querySelectorAll('.pill').forEach(x=>x.classList.toggle('on',x===b));cb(b.dataset.v);});}
+const feld=(id,label,typ,val,extra)=>`<label class="field"><span>${label}</span><input type="${typ}" id="${id}" value="${esc(val)}" ${extra||''}></label>`;
+const zahlFeld=(id,label,val,max,step)=>feld(id,label,'number',val,`min="0" max="${max||99999}" step="${step||1}" inputmode="decimal"`);
+const liste=rows=>`<ul class="list">${rows.map(r=>`<li${r[2]?' class="best"':''}><span>${r[0]}</span><b>${r[1]}</b></li>`).join('')}</ul>`;
+function balken(rows,fmt){ const max=Math.max(...rows.map(r=>r[1]),0.0001); const min=Math.min(...rows.map(r=>r[1]));
+  return `<div class="bars">${rows.map(r=>`<div class="bar"><div class="row"><span>${r[0]}</span><b>${fmt(r[1])}</b></div><div class="track"><div class="fill${r[1]===min?' best':''}" style="width:${Math.max(3,r[1]/max*100)}%"></div></div></div>`).join('')}</div>`; }
+function antwortBox(cls,label,say,more,inhalt,tips,copyText,formel){
+  return `<div class="answer ${cls}"><div class="lbl">${label}</div><div class="say">${say}</div>${more?`<div class="more">${more}</div>`:''}
+  ${inhalt||''}
+  ${tips&&tips.length?`<ul class="tips">${tips.map(t=>`<li>${t}</li>`).join('')}</ul>`:''}
+  ${formel?`<div class="formula">${formel}</div>`:''}
+  <div class="actions"><button class="btn" data-share>Ergebnis teilen</button><button class="btn ghost" data-copy>Als Text kopieren</button><span class="msg" data-msg></span></div>
+  <textarea class="hide" data-text>${esc(copyText)}</textarea></div>`;
+}
+let aktuell={seite:'',S:null,titel:''};
+async function kopieren(text,el,ok){ try{await navigator.clipboard.writeText(text);el.textContent=ok||'Kopiert ✓';}catch(e){el.textContent='Bitte Text markieren und kopieren.';} setTimeout(()=>{el.textContent=''},3000); }
+app.addEventListener('click',async e=>{
+  const c=e.target.closest('[data-copy]'), s=e.target.closest('[data-share]'); if(!c&&!s) return;
+  const box=e.target.closest('.answer'), msg=box.querySelector('[data-msg]'), text=box.querySelector('[data-text]').value;
+  if(c) return kopieren(text,msg);
+  const url=teilLink(aktuell.seite,aktuell.S);
+  if(navigator.share){ try{ await navigator.share({title:aktuell.titel,text:text+'\n\nZum Nachrechnen mit meinen Werten:',url}); return; }catch(err){ if(err&&err.name==='AbortError') return; } }
+  kopieren(text+'\n\nZum Nachrechnen mit meinen Werten: '+url,msg,'Text und Link kopiert ✓');
+});
+app.addEventListener('click',e=>{const b=e.target.closest('[data-go]');if(b) location.hash=b.dataset.go;});
+function verbinden(ids,S,cb){ const upd=()=>{for(const [id,k] of Object.entries(ids)){const el=document.getElementById(id); if(!el) continue; S[k]=typeof S[k]==='number'?num(el.value):el.value;} cb();};
+  Object.keys(ids).forEach(id=>{const el=document.getElementById(id); if(el) el.addEventListener('input',upd);}); }
+
+
+// ================= Daten (Stand 24.11.2026) =================
+// Mindestlohn 13,90 € (2026) und 14,60 € (2027, Fünfte Mindestlohnanpassungsverordnung); gilt nicht für unter 18-Jährige ohne abgeschlossene Berufsausbildung (§ 22 MiLoG).
+// Minijob-Grenze = Mindestlohn × 130 / 3, aufgerundet (§ 8 SGB IV): 603 € (2026), 633 € (2027).
+// Familienversicherung: allgemeine Grenze 1/7 der Bezugsgröße: 565 € (2026), 590 € (2027 laut Referentenentwurf BMAS); mit Minijob bis zur Minijob-Grenze.
+// Grundfreibetrag 12.348 € (2026), 12.564 € (2027, Regierungsentwurf Einkommensteuerreformgesetz 2027).
+// Rentenversicherung im Minijob: Beitragssatz 18,6 %, Arbeitgeber 15 % (gewerblich) bzw. 5 % (Privathaushalt) → eigener Anteil 3,6 % bzw. 13,6 %, Befreiung auf Antrag möglich.
+const J={
+  2026:{ml:13.90,grenze:603,fv:565,gfb:12348,gfbText:'12.348 €'},
+  2027:{ml:14.60,grenze:633,fv:590,gfb:12564,gfbText:'12.564 € (geplant)'}
+};
+const RV_GEWERBE=3.6, RV_PRIVAT=13.6;
+const JOBS={
+  austragen:{name:'Zeitungen oder Prospekte austragen',kurz:'Austragen',kind:true},
+  privat:{name:'Babysitten, Nachhilfe, Garten, Haustiere, Einkaufen (für Privatleute)',kurz:'Privathaushalt',kind:true,privat:true},
+  agrar:{name:'Landwirtschaft: Ernte, Hofladen, Tiere versorgen',kurz:'Landwirtschaft',kind:true,agrar:true},
+  verein:{name:'Helfen beim Sport oder bei Vereins-, Kirchen- oder Parteiaktionen (nicht gewerblich)',kurz:'Verein/Sport',kind:true},
+  laden:{name:'Supermarkt, Laden, Bäckerei (z. B. Regale, Kasse, Verkauf)',kurz:'Laden'},
+  gastro:{name:'Café, Restaurant, Imbiss, Eisdiele',kurz:'Gastronomie',gastro:true},
+  sonst:{name:'Büro, Lager, Firma, sonstiges',kurz:'Sonstiges'}
+};
+const JOB_PILLS=Object.entries(JOBS).map(([k,v])=>[k,v.kurz]);
+const LEIST={
+  gs:'Grundsicherung (früher Bürgergeld)',
+  wg:'Wohngeld',
+  kiz:'Kinderzuschlag',
+  uv:'Unterhaltsvorschuss',
+  kg:'Kindergeld',
+  fv:'Familienversicherung (Krankenkasse)',
+  wr:'Waisenrente'
+};
+const heute=new Date();
+const JAHR_STANDARD=heute>=new Date(2027,0,1)?2027:2026;
+
+// ---------- Ein gemeinsamer Satz Werte für alle Bereiche ----------
+const S={jahr:JAHR_STANDARD,alter:15,vzs:1,schule:'allg',zeit:'schule',job:'austragen',std:2,tage:2,von:'15:00',lohn:10,wochen:2,
+  ziel:0,gespart:0,tg:0,quote:100,mon:0,fer:0,leist:'gs'};
+const jahrW=()=>J[S.jahr]||J[2026];
+const minuten=t=>{const m=String(t||'').match(/^(\d{1,2}):(\d{2})/);return m?clamp(+m[1],0,23)*60+clamp(+m[2],0,59):null;};
+const hhmm=min=>{min=Math.round(min);return String(Math.floor(min/60)%24).padStart(2,'0')+':'+String(min%60).padStart(2,'0');};
+const tageText=n=>n===1?'1 Tag':zahl(n)+' Tage';
+
+// ================= Regeln: Darf ich? =================
+function gruppe(){
+  const a=S.alter;
+  if(a<13) return 'kind12';
+  if(a>=18) return 'erw';
+  if(a<15) return 'kind';
+  if(S.vzs) return S.zeit==='ferien'?'ferien4':'kind';
+  return 'jug';
+}
+function pause(min,erw){ if(erw) return min>540?45:(min>360?30:0); return min>360?60:(min>270?30:0); }
+function regeln(){
+  const g=gruppe(), job=JOBS[S.job]||JOBS.sonst, a=S.alter;
+  const std=clamp(num(S.std),0,12), tage=clamp(Math.round(num(S.tage)),0,7), wochen=clamp(num(S.wochen),0,52);
+  const arbMin=std*60, pMin=pause(arbMin,g==='erw'), start=minuten(S.von), ende=start==null?null:start+arbMin+pMin;
+  const probs=[], gut=[], tips=[]; let maxStd=null, verbot=false;
+  if(g==='kind12'){
+    verbot=true;
+    probs.push('Unter 13 Jahren ist Arbeiten gegen Geld verboten (§ 5 Jugendarbeitsschutzgesetz). Ausnahmen gibt es nur mit Genehmigung der Behörde, etwa für Theater, Film oder Werbeaufnahmen.');
+    tips.push('Kleine Gefälligkeiten in Familie und Nachbarschaft ohne festen Job sind keine Beschäftigung im Sinne des Gesetzes.');
+    tips.push(`Ab dem 13. Geburtstag gehen leichte Jobs wie Prospekte austragen, Babysitten oder Nachhilfe – höchstens 2 Stunden am Tag.`);
+    return {g,cls:'bad',say:'Mit '+a+' darfst du noch nicht jobben.',probs,gut,tips,maxStd:0,ende,pMin};
+  }
+  if(g==='erw'){
+    gut.push('Ab 18 gilt das Jugendarbeitsschutzgesetz nicht mehr, sondern das Arbeitszeitgesetz (höchstens 8 Std. am Tag, ausnahmsweise 10).');
+    gut.push(`Du hast Anspruch auf den Mindestlohn: ${eur2(jahrW().ml)} pro Stunde (${S.jahr}).`);
+    if(num(S.lohn)>0&&num(S.lohn)<jahrW().ml) probs.push(`${eur2(num(S.lohn))} pro Stunde liegt unter dem Mindestlohn von ${eur2(jahrW().ml)}. Das darf der Arbeitgeber ab 18 nicht zahlen.`);
+    if(std>10) probs.push('Mehr als 10 Stunden am Tag sind auch für Erwachsene nicht erlaubt.');
+    if(S.schule!=='keine') tips.push('Die Schule geht vor: Arbeit während des Unterrichts ist nicht erlaubt, und wer Grundsicherung bezieht, sollte die Schülerregeln im Bereich „Eltern“ prüfen.');
+    tips.push('In den Ferien gibt es ab 18 keine 4-Wochen-Grenze mehr.');
+    maxStd=10;
+  }
+  if(g==='kind'){
+    const grund=a<15?`Mit ${a} giltst du als Kind im Sinne des Gesetzes`:`Solange deine Vollzeitschulpflicht läuft, gelten für dich die Regeln für Kinder`;
+    if(!job.kind){
+      verbot=true;
+      probs.push(`${grund}: Erlaubt sind nur leichte Jobs aus der Liste der Kinderarbeitsschutzverordnung – Austragen, Hilfe im Privathaushalt (Babysitten, Nachhilfe, Garten, Haustiere, Einkaufen), Landwirtschaft und Helfen beim Sport oder bei Vereinen. ${job.kurz} gehört nicht dazu.`);
+      if(a>=15&&S.vzs) tips.push('In den Schulferien darfst du ab 15 bis zu 4 Wochen im Jahr auch im Laden, Café oder Büro arbeiten – dann bis zu 8 Std. am Tag. Stell oben „Ferien“ ein.');
+      else if(a<15) tips.push(`Ab 15 darfst du in den Ferien bis zu 4 Wochen im Jahr einen richtigen Ferienjob machen, etwa im Laden oder Café.`);
+    } else gut.push(`${job.kurz} ist ein erlaubter leichter Job (Kinderarbeitsschutzverordnung).`);
+    maxStd=job.agrar?3:2;
+    if(std>maxStd) probs.push(`Höchstens ${maxStd} Stunden am Tag${job.agrar?' (3 Std. nur im landwirtschaftlichen Familienbetrieb, sonst 2)':''} – du hast ${zahl(std,1)} eingeplant.`);
+    else gut.push(`${zahl(std,1)} Std. am Tag passen (höchstens ${maxStd}${job.agrar?' im landwirtschaftlichen Familienbetrieb':''}).`);
+    if(start!=null&&(start<8*60||ende>18*60)) probs.push(`Arbeiten nur zwischen 8 und 18 Uhr – bei dir ${hhmm(start)} bis ${hhmm(ende)} Uhr.`);
+    else if(start!=null) gut.push(`${hhmm(start)} bis ${hhmm(ende)} Uhr liegt zwischen 8 und 18 Uhr.`);
+    if(S.zeit==='schule') tips.push('Nicht vor dem Unterricht und nicht während des Unterrichts.');
+    tips.push('Deine Eltern müssen zustimmen, und der Job muss leicht sein: nichts Schweres tragen, nichts Gefährliches, die Schule darf nicht leiden.');
+  }
+  if(g==='ferien4'||g==='jug'){
+    if(g==='ferien4'){
+      gut.push('Mit 15 bis 17 darfst du in den Schulferien einen richtigen Ferienjob machen – höchstens 4 Wochen im Kalenderjahr (§ 5 Abs. 4 JArbSchG).');
+      const at=Math.round(wochen*Math.min(tage,5));
+      if(at>20||wochen>4) probs.push(`${zahl(wochen,1)} Wochen mit ${tageText(tage)} pro Woche sind ${at} Arbeitstage – erlaubt sind 4 Wochen im Jahr (das Arbeitsschutzportal NRW rechnet mit 20 Arbeitstagen). Die 4 Wochen dürfen auf mehrere Ferien verteilt werden.`);
+      else gut.push(`${zahl(wochen,1)} ${wochen===1?'Woche':'Wochen'} passen in die 4 Wochen pro Jahr${at<20?` (noch ${20-at} Arbeitstage übrig)`:''}.`);
+    } else {
+      gut.push('Deine Vollzeitschulpflicht ist vorbei: Du darfst wie andere Jugendliche arbeiten, auch das ganze Jahr – aber die Schule geht vor.');
+    }
+    maxStd=8;
+    if(std>8) probs.push(`Höchstens 8 Stunden am Tag und 40 in der Woche (ohne Pausen) – du hast ${zahl(std,1)} Std. eingeplant.`);
+    else gut.push(`${zahl(std,1)} Std. am Tag passen (höchstens 8).`);
+    if(std*tage>40) probs.push(`${zahl(std*tage,1)} Stunden pro Woche sind mehr als die erlaubten 40.`);
+    if(start!=null){
+      let bis=20*60, bisText='20 Uhr';
+      if(a>=16&&job.gastro){bis=22*60;bisText='22 Uhr (ab 16 in der Gastronomie)';}
+      const ab=6*60;
+      if(start<ab) probs.push(`Vor 6 Uhr darfst du nicht arbeiten (Ausnahme: Bäckereien ab 16 Jahren ab 5 Uhr, ab 17 ab 4 Uhr) – bei dir Beginn ${hhmm(start)} Uhr.`);
+      if(ende>bis) probs.push(`Schluss spätestens um ${bisText} – mit Pause wärst du bis ${hhmm(ende)} Uhr da.`);
+      if(start>=ab&&ende<=bis) gut.push(`${hhmm(start)} bis ${hhmm(ende)} Uhr (mit ${pMin} Min. Pause) liegt im erlaubten Zeitraum bis ${bisText}.`);
+    }
+    if(job.gastro&&a<16) tips.push('In der Gastronomie geht es erst ab 16 bis 22 Uhr, vorher nur bis 20 Uhr.');
+    tips.push('Pausen: ab 4½ Stunden Arbeit 30 Minuten, ab 6 Stunden 60 Minuten. Nach Feierabend mindestens 12 Stunden frei.');
+    tips.push('Samstags und sonntags nur in bestimmten Bereichen (etwa Laden, Bäckerei, Gastronomie, Sport, Landwirtschaft) und nicht jedes Wochenende: mindestens 2 Samstage und 2 Sonntage im Monat bleiben frei.');
+    tips.push('Nicht erlaubt: Akkord- oder Fließbandarbeit, gefährliche Arbeiten, Alkohol oder Tabak verkaufen ohne Aufsicht.');
+    tips.push('Deine Eltern müssen den Arbeitsvertrag mit unterschreiben.');
+  }
+  if(g!=='erw'&&tage>5) probs.push(`Höchstens 5 Arbeitstage pro Woche – du hast ${tage} eingeplant.`);
+  if(g!=='erw') tips.push('Mindestlohn: Unter 18 ohne abgeschlossene Ausbildung gibt es keinen Anspruch darauf (§ 22 Mindestlohngesetz). Den Stundenlohn handelst du aus – schriftlich festhalten.');
+  if(g==='kind'||g==='ferien4'||g==='jug') tips.push('Eine ärztliche Erstuntersuchung braucht es für Minijobs mit leichten Arbeiten und für Ferienjobs bis 2 Monate nicht.');
+  let cls, say;
+  if(verbot){cls='bad';say=(g==='kind'?'Dieser Job ist für dich noch nicht erlaubt.':'So nicht erlaubt.');}
+  else if(probs.length){cls='warn';say='Erlaubt – aber nicht so, wie du es geplant hast.';}
+  else {cls='ok';say='Ja, so darfst du arbeiten.';}
+  return {g,cls,say,probs,gut,tips,maxStd,ende,pMin};
+}
+
+// ================= Rechnung: Was bleibt? =================
+function verdienst(){
+  const w=jahrW(), lohn=Math.max(0,num(S.lohn)), std=Math.max(0,num(S.std)), tage=clamp(Math.round(num(S.tage)),0,7);
+  const woche=lohn*std*tage, job=JOBS[S.job]||JOBS.sonst;
+  if(S.zeit==='ferien'){
+    const wochen=Math.max(0,num(S.wochen)), brutto=woche*wochen;
+    return {art:'ferien',woche,brutto,netto:brutto,wochen,rvSatz:0,monat:wochen>0?brutto/Math.max(1,wochen/(13/3)):0};
+  }
+  const monat=woche*13/3; const mini=monat<=w.grenze+0.004;
+  const rvSatz=mini?(job.privat?RV_PRIVAT:RV_GEWERBE):null;
+  const netto=mini?monat*(1-rvSatz/100):null;
+  return {art:'schule',woche,monat,mini,rvSatz,netto,nettoBefreit:mini?monat:null,brutto:monat};
+}
+function sparplan(v){
+  const ziel=Math.max(0,num(S.ziel)), gespart=Math.max(0,num(S.gespart)), tg=Math.max(0,num(S.tg)), q=clamp(num(S.quote),0,100)/100;
+  if(!ziel) return null;
+  let rest=Math.max(0,ziel-gespart);
+  if(rest===0) return {fertig:true,monate:0,text:'Du hast dein Ziel schon erreicht.'};
+  if(v.art==='ferien'){
+    const einmal=v.netto*q; const nach=Math.max(0,rest-einmal);
+    if(nach===0) return {monate:0,ferien:true,einmal,text:`Nach dem Ferienjob hast du dein Ziel erreicht – es bleiben sogar ${eur(einmal-rest)} übrig.`};
+    if(tg<=0) return {monate:Infinity,ferien:true,einmal,nach,text:`Nach dem Ferienjob fehlen noch ${eur(nach)}. Trag ein, wie viel Taschengeld du im Monat zurücklegst.`};
+    const m=Math.ceil(nach/tg); return {monate:m,ferien:true,einmal,nach,text:`Nach dem Ferienjob fehlen noch ${eur(nach)} – mit ${eur(tg)} Taschengeld im Monat weitere ${m} ${m===1?'Monat':'Monate'}.`};
+  }
+  const proMonat=(v.netto==null?v.monat:v.netto)*q+tg;
+  if(proMonat<=0) return {monate:Infinity,text:'Mit diesen Werten sparst du nichts zurück.'};
+  const m=Math.ceil(rest/proMonat); return {monate:m,proMonat,text:`Mit ${eur(proMonat)} im Monat hast du dein Ziel in ${m} ${m===1?'Monat':'Monaten'}.`};
+}
+const monatsName=['Januar','Februar','März','April','Mai','Juni','Juli','August','September','Oktober','November','Dezember'];
+function inMonaten(m){ const d=new Date(heute.getFullYear(),heute.getMonth()+m,1); return monatsName[d.getMonth()]+' '+d.getFullYear(); }
+
+// ================= Rechnung: Was ändert sich für die Familie? =================
+function grundsicherungAnrechnung(mon,schueler){
+  const G=jahrW().grenze; let frei;
+  if(schueler){ frei=Math.min(mon,G)+0.3*clamp(mon-G,0,Math.max(0,1000-G))+0.1*clamp(mon-1000,0,200); }
+  else { frei=Math.min(mon,100)+0.2*clamp(mon-100,0,420)+0.3*clamp(mon-520,0,480)+0.1*clamp(mon-1000,0,200); }
+  return {frei,angerechnet:Math.max(0,mon-frei)};
+}
+function familie(){
+  const w=jahrW(), a=S.alter, mon=Math.max(0,num(S.mon)), fer=Math.max(0,num(S.fer));
+  const schueler=S.schule!=='keine'&&a<25, allg=S.schule==='allg', jahrSumme=mon*12+fer;
+  const set=new Set(String(S.leist).split(',').filter(k=>LEIST[k]));
+  const rows=[]; let schlecht=0, mittel=0;
+  const add=(k,cls,titel,text)=>{rows.push({k,cls,titel,text}); if(cls==='bad') schlecht++; else if(cls==='warn') mittel++;};
+  if(set.has('gs')||set.has('kiz')){
+    const gs=grundsicherungAnrechnung(mon,schueler);
+    if(set.has('gs')){
+      if(schueler){
+        const ferText=fer>0?` Dein Ferienverdienst (${eur(fer)}) zählt gar nicht, wenn du ihn in den Schulferien verdienst (§ 11a Abs. 7 SGB II).`:' Was du in den Schulferien verdienst, zählt gar nicht (§ 11a Abs. 7 SGB II).';
+        if(gs.angerechnet<=0) add('gs','ok','Grundsicherung: nichts wird abgezogen',`Als Schüler unter 25 behältst du außerhalb der Ferien bis zu ${eur(w.grenze)} im Monat (${S.jahr}, § 11b Abs. 2b SGB II) – bei dir ${eur(mon)}.${ferText} Der Job muss trotzdem beim Jobcenter gemeldet werden, mit Schulbescheinigung.`);
+        else add('gs','warn',`Grundsicherung: ${eur(gs.angerechnet)} im Monat werden angerechnet`,`Bis ${eur(w.grenze)} bleibt frei, vom Rest 30 % (bis 1.000 €) – frei bleiben ${eur(gs.frei)} von ${eur(mon)}. Um ${eur(gs.angerechnet)} sinkt die Leistung für dich.${ferText}`);
+      } else {
+        add('gs',gs.angerechnet>0?'warn':'ok',`Grundsicherung: ${eur(gs.angerechnet)} im Monat werden angerechnet`,`Du gehst nicht (mehr) zur Schule, deshalb gelten die normalen Freibeträge: 100 € frei, vom Rest bis 520 € 20 %, bis 1.000 € 30 %. Frei bleiben ${eur(gs.frei)} von ${eur(mon)}${fer?'; auch Ferienverdienst zählt dann':''}.`);
+      }
+    }
+    if(set.has('kiz')){
+      const minder=gs.angerechnet*0.45;
+      if(minder<=0) add('kiz','ok','Kinderzuschlag: bleibt gleich',`Beim Kinderzuschlag zählt dein Einkommen nach denselben Regeln wie bei der Grundsicherung (§ 6a Abs. 3 BKGG)${schueler?': Als Schüler bleiben '+eur(w.grenze)+' im Monat und der Ferienverdienst frei.':'.'}`);
+      else add('kiz','warn',`Kinderzuschlag: rund ${eur(minder)} weniger im Monat`,`Angerechnet werden ${eur(gs.angerechnet)} deines Verdienstes, davon mindern 45 % den Kinderzuschlag (§ 6a Abs. 3 BKGG).`);
+    }
+  }
+  if(set.has('wg')){
+    if(a>=25) add('wg','warn','Wohngeld: dein Einkommen zählt voll','Ab 25 gibt es keinen Freibetrag mehr für das eigene Einkommen der Kinder im Haushalt.');
+    else { const ueber=Math.max(0,jahrSumme-1200);
+      if(ueber<=0) add('wg','ok','Wohngeld: zählt nicht',`Für eigenes Einkommen von Kindern unter 25 gibt es einen Freibetrag von bis zu 1.200 € im Jahr (§ 17 WoGG) – bei dir rund ${eur(jahrSumme)} im Jahr.`);
+      else add('wg','warn',`Wohngeld: ${eur(ueber)} im Jahr zählen mit`,`Bis 1.200 € im Jahr bleiben frei (§ 17 WoGG), bei rund ${eur(jahrSumme)} zählen etwa ${eur(ueber/12)} im Monat zum Haushaltseinkommen. Das Wohngeld kann dadurch sinken – wie stark, zeigt der Wohngeldrechner des Bundes. Steigt das Einkommen des Haushalts um mehr als 15 %, muss es gemeldet werden.`);
+    }
+  }
+  if(set.has('uv')){
+    if(a>=18) add('uv','ok','Unterhaltsvorschuss: endet mit 18','Unterhaltsvorschuss gibt es nur bis zum 18. Geburtstag.');
+    else if(allg) add('uv','ok','Unterhaltsvorschuss: bleibt gleich','Solange du eine allgemeinbildende Schule besuchst, zählt dein Verdienst nicht (§ 2 Abs. 4 UVG).');
+    else add('uv',mon+fer>0?'warn':'ok','Unterhaltsvorschuss: dein Verdienst kann zählen','Wer keine allgemeinbildende Schule mehr besucht (etwa Berufsschule), bei dem wird Einkommen aus Arbeit angerechnet (§ 2 Abs. 4 UVG). Den genauen Betrag rechnet die Unterhaltsvorschussstelle – den Job dort melden.');
+  }
+  if(set.has('kg')){
+    if(a<18) add('kg','ok','Kindergeld: bleibt','Unter 18 spielt dein Verdienst fürs Kindergeld keine Rolle.');
+    else add('kg','ok','Kindergeld: bleibt (in Schule oder erster Ausbildung)','Bis 25 hängt das Kindergeld während Schule und erster Ausbildung nicht vom eigenen Verdienst ab. Erst nach einer abgeschlossenen Ausbildung dürfen es höchstens 20 Wochenstunden oder ein Minijob sein.');
+  }
+  if(set.has('fv')){
+    const schnitt=jahrSumme/12, istMini=S.zeit==='schule'&&mon>0&&mon<=w.grenze;
+    const grenze=istMini?w.grenze:w.fv;
+    if(schnitt<=grenze) add('fv','ok','Familienversicherung: bleibt',`Im Jahresschnitt rund ${eur(schnitt)} im Monat – erlaubt sind ${eur(grenze)}${istMini?' mit Minijob':''} (${S.jahr}${S.jahr===2027&&!istMini?', geplant':''}).`);
+    else add('fv','bad','Familienversicherung: Grenze überschritten',`Im Jahresschnitt rund ${eur(schnitt)} im Monat – erlaubt sind ${eur(w.grenze)} mit Minijob, sonst ${eur(w.fv)}. Dann endet die kostenlose Mitversicherung; mit der Krankenkasse sprechen, bevor du zusagst.`);
+  }
+  if(set.has('wr')) add('wr','ok','Waisenrente: bleibt','Seit 2015 wird eigenes Einkommen nicht mehr auf die Waisenrente angerechnet.');
+  return {rows,schlecht,mittel,jahrSumme,set};
+}
+
+// ================= Seiten =================
+const JAHR_PILLS=[[2026,'2026'],[2027,'2027']];
+function kopf(titel,sub){ return `<h2>${titel}</h2>${sub?`<p class="sub">${sub}</p>`:''}`; }
+function basisFelder(mitJob){
+  return `<div class="step">Wie alt bist du?</div>${zahlFeldEinzeln('alter',S.alter,30)}
+  <div class="step${S.alter>=15&&S.alter<18?'':' hide'}" id="vzsLbl">Sind deine Pflichtschuljahre schon vorbei?</div>
+  <div id="vzsBox" class="${S.alter>=15&&S.alter<18?'':'hide'}">${pills('vzs',[[1,'Nein, noch nicht'],[0,'Ja, vorbei']],S.vzs)}
+  <p class="hint">Vollzeitschulpflicht: meist 9 Schuljahre, in manchen Ländern (etwa Berlin, Brandenburg, Bremen, NRW) 10. Wer in der Oberstufe oder an einer Berufsfachschule ist, hat sie meist hinter sich. Im Zweifel im Sekretariat fragen.</p></div>
+  ${mitJob?`<div class="step">Wann willst du arbeiten?</div>${pills('zeit',[['schule','Neben der Schule'],['ferien','In den Ferien']],S.zeit)}
+  <div class="step">Was für ein Job?</div>${pills('job',JOB_PILLS,S.job)}<p class="hint" id="jobName">${esc((JOBS[S.job]||JOBS.sonst).name)}</p>`:''}`;
+}
+function zahlFeldEinzeln(id,val,max){ return `<input type="number" id="${id}" value="${esc(val)}" min="0" max="${max}" step="1" inputmode="numeric" style="max-width:120px">`; }
+function basisBinden(neu){
+  const a=document.getElementById('alter');
+  a.addEventListener('input',()=>{S.alter=clamp(Math.round(num(a.value)),0,99); const z=S.alter>=15&&S.alter<18;
+    document.getElementById('vzsBox').classList.toggle('hide',!z); document.getElementById('vzsLbl').classList.toggle('hide',!z); neu();});
+  pillGroup('vzs',v=>{S.vzs=+v;neu();});
+  if(document.getElementById('zeit')){
+    pillGroup('zeit',v=>{S.zeit=v; const w=document.getElementById('wochenBox'); if(w) w.classList.toggle('hide',v!=='ferien'); neu();});
+    pillGroup('job',v=>{S.job=v; document.getElementById('jobName').textContent=JOBS[v].name; neu();});
+  }
+}
+function arbeitsFelder(mitLohn){
+  return `<div class="fields">
+    ${zahlFeld('std','Stunden pro Arbeitstag',S.std,12,0.5)}
+    ${zahlFeld('tage','Arbeitstage pro Woche',S.tage,7,1)}
+    ${mitLohn?zahlFeld('lohn','Stundenlohn in € (brutto)',S.lohn,100,0.1):feld('von','Beginn (Uhrzeit)','time',S.von,'')}
+    <div id="wochenBox" class="${S.zeit==='ferien'?'':'hide'}">${zahlFeld('wochen','Wochen in den Ferien',S.wochen,52,0.5)}</div>
+  </div>`;
+}
+
+function start(){
+  const w=J[2027];
+  h(`<h1>Schülerjob-Helfer</h1>
+  <p class="sub">Was darfst du mit 13 bis 17 arbeiten, was bleibt dir übrig – und verliert deine Familie dadurch Geld? Ohne Anmeldung, alles rechnet auf deinem Handy.</p>
+  <div class="news"><b>Neu ab 1. Januar 2027:</b> Mindestlohn ${eur2(w.ml)}, Minijob-Grenze ${eur(w.grenze)} im Monat. Unter 18 ohne Ausbildung gibt es aber keinen Anspruch auf Mindestlohn. Minijobs bleiben 2027 bestehen (Stand 24.11.2026).</div>
+  <div class="qlist">
+    <a class="q" href="#darf"><span class="ic">✅</span><div><b>Darf ich das?</b><span>Alter, Job, Stunden, Uhrzeit, Ferien – was das Gesetz erlaubt</span></div></a>
+    <a class="q" href="#geld"><span class="ic">💶</span><div><b>Was bleibt mir – und wann habe ich mein Ziel?</b><span>Lohn, Minijob oder Ferienjob, Abzüge, Sparplan bis zum Handy, Führerschein …</span></div></a>
+    <a class="q" href="#eltern"><span class="ic">👪</span><div><b>Verliert meine Familie Geld?</b><span>Grundsicherung, Wohngeld, Kinderzuschlag, Kindergeld, Krankenkasse</span></div></a>
+  </div>`);
+}
+
+function darf(p){
+  vorbelegen(S,p);
+  h(`${kopf('Darf ich das?','Stell ein, was du vorhast. Die Antwort folgt den Regeln des Jugendarbeitsschutzgesetzes und der Kinderarbeitsschutzverordnung.')}
+  ${basisFelder(true)}
+  <div class="step">Wie viel willst du arbeiten?</div>${arbeitsFelder(false)}
+  <div id="out"></div>`);
+  const rechne=()=>{
+    const r=regeln(), job=JOBS[S.job]||JOBS.sonst;
+    const more=r.probs.length?`<b>Das passt nicht:</b><ul class="tips">${r.probs.map(x=>`<li>${x}</li>`).join('')}</ul>`:'';
+    const gut=r.gut.length?`<b>Das passt:</b><ul class="tips">${r.gut.map(x=>`<li>${x}</li>`).join('')}</ul>`:'';
+    const weiter=`<p class="hint">Weiter: <a href="#geld?${query(S)}">Was bleibt mir davon?</a> · <a href="#eltern?${query(Object.assign({},S,{mon:S.zeit==='schule'?Math.round(verdienst().monat):0,fer:S.zeit==='ferien'?Math.round(verdienst().brutto):0}))}">Verliert meine Familie Geld?</a></p>`;
+    const text=`Ich bin ${S.alter}${S.alter>=15&&S.alter<18?(S.vzs?' (noch vollzeitschulpflichtig)':' (Pflichtschuljahre vorbei)'):''} und will ${S.zeit==='ferien'?'in den Ferien':'neben der Schule'} jobben: ${job.kurz}, ${zahl(S.std,1)} Std. an ${tageText(S.tage)} pro Woche${S.zeit==='ferien'?`, ${zahl(S.wochen,1)} Wochen`:''}. Ergebnis: ${ohneTags(r.say)} ${r.probs.map(ohneTags).join(' ')}`;
+    document.getElementById('out').innerHTML=antwortBox(r.cls,'Deine Antwort',r.say,more+gut,weiter,r.tips,text,
+      'Grundlage: §§ 2, 5, 7–17 Jugendarbeitsschutzgesetz, § 2 Kinderarbeitsschutzverordnung, § 22 Mindestlohngesetz. Bei Unklarheit hilft das Amt für Arbeitsschutz (Gewerbeaufsicht) deines Landes. Keine Rechtsberatung.');
+    hashSetzen('darf',S); aktuell={seite:'darf',S,titel:'Schülerjob-Helfer: Darf ich das?'};
+  };
+  basisBinden(rechne);
+  verbinden({std:'std',tage:'tage',von:'von',wochen:'wochen'},S,rechne);
+  rechne();
+}
+
+function geld(p){
+  vorbelegen(S,p);
+  h(`${kopf('Was bleibt mir – und wann habe ich mein Ziel?','Lohn und Stunden eintragen. Abzüge, Minijob-Grenze und Sparplan rechnet die Seite.')}
+  <div class="step">Für welches Jahr?</div>${pills('jahr',JAHR_PILLS,S.jahr)}
+  ${basisFelder(true)}
+  <div class="step">Wie viel arbeitest du, für wie viel Geld?</div>${arbeitsFelder(true)}
+  <div class="step">Wofür sparst du? (optional)</div>
+  <div class="fields">
+    ${zahlFeld('ziel','Sparziel in € (z. B. Handy, Führerschein)',S.ziel,100000,10)}
+    ${zahlFeld('gespart','Schon gespart (€)',S.gespart,100000,10)}
+    ${zahlFeld('tg','Taschengeld, das du im Monat zurücklegst (€)',S.tg,10000,5)}
+    ${zahlFeld('quote','Wie viel vom Lohn sparst du? (%)',S.quote,100,5)}
+  </div>
+  <div id="out"></div>`);
+  const rechne=()=>{
+    const w=jahrW(), v=verdienst(), r=regeln(), job=JOBS[S.job]||JOBS.sonst;
+    let cls='ok', say, more='', rows=[], tips=[];
+    if(v.art==='ferien'){
+      say=`${eur(v.brutto)} für ${zahl(v.wochen,1)} ${v.wochen===1?'Woche':'Wochen'} Ferienjob`;
+      more=`Ein Ferienjob ist meist eine <b>kurzfristige Beschäftigung</b> (höchstens 3 Monate oder 70 Arbeitstage im Jahr): keine Sozialabgaben, egal wie viel du verdienst – du behältst also in der Regel alles.`;
+      rows=[['Pro Woche',eur(v.woche)],['Ferienjob gesamt (brutto)',eur(v.brutto)],['Sozialabgaben','0 €',true],['Ausgezahlt (ohne Lohnsteuer)',eur(v.netto),true]];
+      tips.push(`Steuern: Fürs ganze Jahr bleibt der Grundfreibetrag steuerfrei (${S.jahr}: ${w.gfbText}). Zieht der Arbeitgeber bei einem hohen Monatslohn doch Lohnsteuer ab, holst du sie mit einer Steuererklärung zurück.`);
+    } else if(v.mini){
+      say=`${eur(v.netto)} im Monat bleiben dir`;
+      more=`${eur(v.monat)} brutto im Monat sind ein <b>Minijob</b> (Grenze ${S.jahr}: ${eur(w.grenze)}). Abgezogen wird nur dein Rentenbeitrag von ${zahl(v.rvSatz,1)} %${job.privat?' (im Privathaushalt, z. B. Babysitten)':''} – auf Antrag beim Arbeitgeber kannst du dich befreien lassen, dann bekommst du ${eur(v.nettoBefreit)}.`;
+      rows=[['Pro Woche (brutto)',eur(v.woche)],['Im Monat (brutto, × 4,33 Wochen)',eur(v.monat)],[`Rentenbeitrag ${zahl(v.rvSatz,1)} %`,'− '+eur(v.monat-v.netto)],['Dir bleiben',eur(v.netto),true],['Mit Befreiung vom Rentenbeitrag',eur(v.nettoBefreit)],['Im Jahr (ohne Befreiung)',eur(v.netto*12)]];
+      tips.push('Steuern zahlt beim Minijob meist der Arbeitgeber pauschal – bei dir kommt nichts weg.');
+      tips.push(`Noch Luft bis zur Minijob-Grenze: ${eur(w.grenze-v.monat)} im Monat${num(S.lohn)>0?` (rund ${zahl((w.grenze-v.monat)/num(S.lohn),1)} Stunden)`:''}.`);
+      if(job.privat) tips.push('Im Privathaushalt meldet die Familie den Minijob mit dem Haushaltsscheck bei der Minijob-Zentrale an.');
+    } else {
+      cls='warn';
+      say=`${eur(v.monat)} brutto im Monat – über der Minijob-Grenze`;
+      more=`Ab ${eur(w.grenze+1)} im Monat (${S.jahr}) ist es kein Minijob mehr, sondern ein Midijob mit Sozialabgaben. Was netto bleibt, zeigt ein Brutto-Netto-Rechner. Weniger Stunden halten dich im Minijob.`;
+      rows=[['Pro Woche (brutto)',eur(v.woche)],['Im Monat (brutto)',eur(v.monat)],['Minijob-Grenze',eur(w.grenze)]];
+    }
+    if(S.alter<18&&num(S.lohn)>0) tips.push(`Unter 18 gibt es keinen Mindestlohn-Anspruch. Zum Vergleich: Der Mindestlohn für Erwachsene liegt ${S.jahr} bei ${eur2(w.ml)}.`);
+    if(S.alter>=18&&num(S.lohn)>0&&num(S.lohn)<w.ml){cls='bad'; tips.unshift(`Achtung: Ab 18 muss der Arbeitgeber mindestens ${eur2(w.ml)} pro Stunde zahlen (${S.jahr}).`);}
+    if(r.cls!=='ok') tips.unshift(`Hinweis: ${ohneTags(r.say)} ${r.probs.map(ohneTags).join(' ')} <a href="#darf?${query(S)}">Zu „Darf ich das?“</a>`);
+    const sp=sparplan(v); let spText='';
+    if(sp){ const datum=isFinite(sp.monate)&&sp.monate>0?` Das ist etwa <b>${inMonaten(sp.monate)}</b>.`:'';
+      spText=`<div class="box"><h3>Dein Sparplan: ${eur(num(S.ziel))}</h3><p class="hint">${sp.text}${datum}</p></div>`; }
+    const famLink=`<p class="hint">Weiter: <a href="#eltern?${query(Object.assign({},S,{mon:v.art==='schule'?Math.round(v.monat):0,fer:v.art==='ferien'?Math.round(v.brutto):0}))}">Verliert meine Familie dadurch Geld?</a></p>`;
+    const text=`Mein Job (${job.kurz}): ${zahl(S.std,1)} Std. an ${tageText(S.tage)} pro Woche für ${eur2(num(S.lohn))} pro Stunde${v.art==='ferien'?`, ${zahl(v.wochen,1)} Wochen in den Ferien`:''}. ${ohneTags(say)}.${sp?' '+ohneTags(sp.text)+(isFinite(sp.monate)&&sp.monate>0?' Das ist etwa '+inMonaten(sp.monate)+'.':''):''}`;
+    document.getElementById('out').innerHTML=antwortBox(cls,'Dein Ergebnis',say,more,liste(rows)+spText+famLink,tips,text,
+      `Rechnung: Stundenlohn × Stunden × Tage = Wochenlohn; Monat = Woche × 13 ÷ 3 (4,33 Wochen). Minijob-Grenze = Mindestlohn × 130 ÷ 3 (§ 8 SGB IV): ${S.jahr} ${eur(w.grenze)}. Rentenbeitrag im Minijob 18,6 %, davon trägt der Arbeitgeber 15 % (im Privathaushalt 5 %). Stand 24.11.2026.`);
+    hashSetzen('geld',S); aktuell={seite:'geld',S,titel:'Schülerjob-Helfer: Was bleibt mir?'};
+  };
+  pillGroup('jahr',v=>{S.jahr=+v;rechne();});
+  basisBinden(rechne);
+  verbinden({std:'std',tage:'tage',lohn:'lohn',wochen:'wochen',ziel:'ziel',gespart:'gespart',tg:'tg',quote:'quote'},S,rechne);
+  rechne();
+}
+
+function eltern(p){
+  vorbelegen(S,p);
+  if(!p.has('mon')&&!p.has('fer')&&!S.mon&&!S.fer) S.mon=300;
+  const sel=new Set(String(S.leist).split(','));
+  h(`${kopf('Verliert meine Familie Geld?','Wähle aus, was deine Familie bekommt. Die Seite zeigt für jede Leistung, ob dein Verdienst etwas ändert.')}
+  <div class="step">Für welches Jahr?</div>${pills('jahr',JAHR_PILLS,S.jahr)}
+  <div class="step">Wie alt bist du?</div>${zahlFeldEinzeln('alter',S.alter,30)}
+  <div class="step">Gehst du zur Schule?</div>${pills('schule',[['allg','Ja, allgemeinbildende Schule'],['beruf','Ja, Berufsschule / Berufsfachschule'],['keine','Nein']],S.schule)}
+  <div class="step">Was verdienst du?</div>
+  <div class="fields">${zahlFeld('mon','Neben der Schule: € brutto im Monat',S.mon,10000,10)}${zahlFeld('fer','In den Schulferien: € im ganzen Jahr',S.fer,100000,10)}</div>
+  <div class="step">Was bekommt deine Familie? (mehrere möglich)</div>
+  <div class="pills" id="leist">${Object.entries(LEIST).map(([k,n])=>`<button class="pill${sel.has(k)?' on':''}" data-v="${k}">${n}</button>`).join('')}</div>
+  <div id="out"></div>`);
+  const rechne=()=>{
+    const f=familie();
+    let cls,say,more;
+    if(!f.set.size){cls='';say='Wähle oben aus, was deine Familie bekommt.';more='';}
+    else if(f.schlecht){cls='bad';say='Achtung: Bei einer Leistung wird es teuer.';more='Sprich vor der Zusage mit deinen Eltern – mit etwas weniger Stunden lässt sich das oft vermeiden.';}
+    else if(f.mittel){cls='warn';say='Ein Teil deines Verdienstes wird angerechnet.';more='Die Beträge unten zeigen, wie viel. Vieles bleibt trotzdem frei.';}
+    else {cls='ok';say='Deine Familie verliert nichts.';more='Du darfst dein Geld behalten. Gemeldet werden muss der Job trotzdem überall, wo deine Familie Leistungen bekommt.';}
+    const inhalt=f.rows.map(r=>`<div class="box"><h3>${r.cls==='ok'?'✅':r.cls==='bad'?'⛔':'⚠️'} ${r.titel}</h3><p class="hint">${r.text}</p></div>`).join('');
+    const text=`Ich bin ${S.alter}, ${S.schule==='keine'?'nicht mehr in der Schule':'Schüler'}, verdiene ${eur(num(S.mon))} im Monat neben der Schule${num(S.fer)?' und '+eur(num(S.fer))+' in den Ferien':''}. ${ohneTags(say)} `+f.rows.map(r=>ohneTags(r.titel)+'.').join(' ');
+    document.getElementById('out').innerHTML=antwortBox(cls,'Für deine Familie',say,more,inhalt,
+      ['Ferien heißt: die offiziellen Schulferien deines Landes. Wer das ganze Jahr einen Minijob hat und in den Ferien nur mehr Stunden macht, hat damit keinen Ferienjob.','Keine Rechtsberatung: Im Einzelfall entscheiden Jobcenter, Wohngeldstelle, Familienkasse oder Krankenkasse. Beratung gibt es kostenlos bei Sozialberatungsstellen und Verbraucherzentralen.'],text,
+      `Grundlage: §§ 11a Abs. 7, 11b Abs. 2b und 3 SGB II (Schüler unter 25: Ferienjob frei, sonst bis zur Minijob-Grenze ${eur(jahrW().grenze)} frei, darüber 30 % bis 1.000 € und 10 % bis 1.200 €); § 6a Abs. 3 BKGG (Kinderzuschlag mindert sich um 45 % des angerechneten Einkommens); § 17 WoGG (1.200 € Freibetrag im Jahr); § 2 Abs. 4 UVG; § 10 SGB V (Familienversicherung ${eur(jahrW().fv)}, mit Minijob ${eur(jahrW().grenze)}). Stand 24.11.2026.`);
+    hashSetzen('eltern',S); aktuell={seite:'eltern',S,titel:'Schülerjob-Helfer: Verliert meine Familie Geld?'};
+  };
+  pillGroup('jahr',v=>{S.jahr=+v;rechne();});
+  pillGroup('schule',v=>{S.schule=v;rechne();});
+  document.getElementById('alter').addEventListener('input',e=>{S.alter=clamp(Math.round(num(e.target.value)),0,99);rechne();});
+  document.getElementById('leist').addEventListener('click',e=>{const b=e.target.closest('.pill'); if(!b) return; b.classList.toggle('on');
+    S.leist=[...document.querySelectorAll('#leist .pill.on')].map(x=>x.dataset.v).join(','); rechne();});
+  verbinden({mon:'mon',fer:'fer'},S,rechne);
+  rechne();
+}
+
+// ================= Navigation =================
+const SEITEN={darf,geld,eltern};
+function route(){ const {seite,p}=hashTeile(); const f=SEITEN[seite];
+  document.getElementById('back').classList.toggle('hide',!f);
+  if(f) f(p); else start(); }
+window.addEventListener('hashchange',route);
+document.getElementById('home').addEventListener('click',()=>{location.hash='';});
+document.getElementById('back').addEventListener('click',()=>{location.hash='';});
+route();
+</script>
+</body>
+</html>
